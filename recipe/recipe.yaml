@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-components
-  version: "0.141.5"
+  version: "0.142.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_components-${{ version }}.tar.gz
-  sha256: 69b31956e7c072a9e0a778ca9f52b8078755a17a87ac020fcf28550f4aee9959
+  sha256: 97136d265c3345cf8927fc9b7904e66c458c2be6f8f89c867ae5de01ee4b3a4d
 
 build:
   number: 0
