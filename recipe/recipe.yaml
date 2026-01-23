@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-components
-  version: 0.144.0
+  version: 0.146.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_components-${{ version }}.tar.gz
-  sha256: 4452bba29481330abe8d25a585c0b85dddaffb5cdb14fc34cb925ff90f5f71cd
+  sha256: 8906d5adeb7ea87371a852989228ed309f10261afa2d4e6ce750c9d00af73d3e
 
 build:
   number: 0
@@ -26,8 +26,8 @@ requirements:
   run:
     - python >=${{ python_min }},<4.0
     - django >=4.2
-    - djc-core-html-parser >=1.0.3
     - typing_extensions >=4.12.2
+    - djc-core >=1.2.2
 tests:
   - python:
       imports:
