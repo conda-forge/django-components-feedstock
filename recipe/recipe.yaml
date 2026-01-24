@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-components
-  version: 0.146.0
+  version: "0.146.0"
 
 package:
   name: ${{ name|lower }}
@@ -26,8 +26,9 @@ requirements:
   run:
     - python >=${{ python_min }},<4.0
     - django >=4.2
-    - typing_extensions >=4.12.2
     - djc-core >=1.2.2
+    - typing_extensions >=4.12.2
+
 tests:
   - python:
       imports:
@@ -39,12 +40,11 @@ about:
   summary: A way to create simple reusable template components in Django.
   homepage: https://django-components.github.io/django-components/latest/overview/welcome/
   description: |
-    Create simple reusable template components in Django.
+       Create simple reusable template components in Django.
   repository: https://github.com/django-components/django-components
   documentation: https://django-components.github.io/django-components/latest/reference/api/
   license: MIT
   license_file: LICENSE
-
 
 extra:
   recipe-maintainers:
