@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-components
-  version: "0.146.0"
+  version: "0.149.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_components-${{ version }}.tar.gz
-  sha256: 8906d5adeb7ea87371a852989228ed309f10261afa2d4e6ce750c9d00af73d3e
+  sha256: 3edb2e21c84b0c696f1502043f5e39986ba19254c6e76a54e62bacdfbabaf9f6
 
 build:
   number: 0
@@ -40,7 +40,7 @@ about:
   summary: A way to create simple reusable template components in Django.
   homepage: https://django-components.github.io/django-components/latest/overview/welcome/
   description: |
-       Create simple reusable template components in Django.
+    Create simple reusable template components in Django.
   repository: https://github.com/django-components/django-components
   documentation: https://django-components.github.io/django-components/latest/reference/api/
   license: MIT
