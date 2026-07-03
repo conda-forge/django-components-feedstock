@@ -33,7 +33,7 @@ requirements:
 tests:
   - python:
       imports:
-        - src.django_components
+        - django_components
       pip_check: true
       python_version:
         - ${{ python_min }}.*
